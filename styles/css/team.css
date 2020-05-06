@@ -1,0 +1,329 @@
+@import "reset.css";
+@font-face {
+  font-family: FuturaDemiC;
+  src: url(../../fonts/futdemic.woff) format("webopen"), url(../../fonts/futdemic.ttf) format("truetype"), url(../../fonts/futdemic.eoteot?#iefix) format("embedded-opentype");
+}
+header .container div, header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  background-color: #fff;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1470px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  background: #131313;
+}
+header .container {
+  padding: 0 116px 0 96px;
+  height: 83px;
+}
+header .container div {
+  flex-grow: 2.4;
+}
+header .container div nav {
+  flex-grow: 1;
+}
+header .container ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .container li a {
+  font-family: FuturaBookC;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+header .container li a:hover,
+header .container li a:focus,
+header .container li .active {
+  color: #e3b873;
+}
+
+.call {
+  font-family: FuturaDemiC;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 37px;
+  text-align: center;
+  width: 161px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 2px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.call:hover {
+  background: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+}
+
+.logo,
+.phone {
+  font-family: FuturaDemiC;
+  font-weight: 600;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.phone {
+  display: inline-block;
+  border-bottom: solid 1px;
+  color: #e3b873;
+  margin: 0 45px 0 74px;
+}
+
+/* .wr-ourteam, section made using grid*/
+.wr-ourteam {
+  padding: 30px 0;
+}
+.wr-ourteam h3 {
+  font-family: Yeseva One;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+  margin-bottom: 15px;
+}
+
+.our-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text1 {
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #181818;
+  max-width: 460px;
+  margin-top: 15px;
+}
+
+.text2 {
+  grid-row: 17/18;
+  grid-column: 1/4;
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  color: #181818;
+  max-width: 605px;
+  white-space: pre-wrap;
+  margin-top: 46px;
+  justify-self: center;
+}
+
+.text2:before {
+  content: "";
+  background-color: #e3b873;
+  width: 55px;
+  height: 2px;
+  display: block;
+  position: relative;
+  left: calc(50% - 27px);
+  top: -9px;
+}
+
+.team-photo {
+  display: grid;
+  grid-template-rows: repeat(14, min-content);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 70px;
+  margin-top: 20px;
+}
+
+.foto {
+  display: grid;
+  grid-template-rows: 35px 282px 83px 10px 45px min-content;
+  grid-template-columns: 35px 20px 230px 20px 35px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+.foto img:first-child {
+  grid-row: 2/4;
+  grid-column: 2/5;
+  justify-self: center;
+}
+.foto img:nth-child(2) {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.7);
+}
+.foto p:nth-child(3) {
+  grid-row: 3/5;
+  grid-column: 3/4;
+  font-family: Yeseva One;
+  font-size: 18px;
+  line-height: 25px;
+  color: #181818;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.foto span {
+  font-family: FuturaBookC;
+  font-size: 18px;
+  line-height: 26px;
+  color: #959595;
+}
+.foto p:nth-child(4) {
+  grid-row: 5/6;
+  grid-column: 3/4;
+  background-color: #e3b873;
+  font-family: Yeseva One;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.foto p:nth-child(5) {
+  grid-row: 6/7;
+  grid-column: 1/6;
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #181818;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.Tulyakov {
+  grid-row: 2/7;
+  grid-column: 1/2;
+}
+
+.Kotlyarova {
+  grid-row: 1/6;
+  grid-column: 2/3;
+}
+
+.Efimov {
+  grid-row: 2/7;
+  grid-column: 3/4;
+}
+
+.Krasovskaja {
+  grid-row: 7/12;
+  grid-column: 1/2;
+}
+
+.Granin {
+  grid-row: 6/11;
+  grid-column: 2/3;
+}
+
+.Prihodko {
+  grid-row: 7/12;
+  grid-column: 3/4;
+}
+
+.Trubeckoi {
+  grid-row: 12/17;
+  grid-column: 1/2;
+}
+
+.Mihalkov {
+  grid-row: 11/16;
+  grid-column: 2/3;
+}
+
+.Plishevcky {
+  grid-row: 12/17;
+  grid-column: 3/4;
+}
+
+@media all and (max-width: 1250px) {
+  .team-photo {
+    grid-template-rows: repeat(25, 1fr);
+    grid-template-columns: repeat(2, min-content);
+    gap: 40px 70px;
+  }
+
+  .Tulyakov {
+    grid-row: 1/6;
+    grid-column: 1/2;
+  }
+
+  .Kotlyarova {
+    grid-row: 2/7;
+    grid-column: 2/3;
+  }
+
+  .Efimov {
+    grid-row: 6/11;
+    grid-column: 1/2;
+  }
+
+  .Krasovskaja {
+    grid-row: 7/12;
+    grid-column: 2/3;
+  }
+
+  .Granin {
+    grid-row: 11/16;
+    grid-column: 1/2;
+  }
+
+  .Prihodko {
+    grid-row: 12/17;
+    grid-column: 2/3;
+  }
+
+  .Trubeckoi {
+    grid-row: 16/21;
+    grid-column: 1/2;
+  }
+
+  .Mihalkov {
+    grid-row: 17/22;
+    grid-column: 2/3;
+  }
+
+  .Plishevcky {
+    grid-row: 21/26;
+    grid-column: 1/2;
+  }
+
+  .text2 {
+    grid-row: 22/26;
+    grid-column: 2/3;
+  }
+}
+
+/*# sourceMappingURL=team.css.map */
